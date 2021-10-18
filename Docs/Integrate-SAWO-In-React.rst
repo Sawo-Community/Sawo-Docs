@@ -52,5 +52,59 @@ We need to follow a few steps to get SAWO integrated into our application.
 
      npm i sawo
      
+We have to go to the folder where we have created the React application and run the code in the terminal, which will install the SAWO package.
+
+4. Now, we have to create a file "login.js" in the src folder of our app, and add the following code:
+
+.. code-block:: none
+
+          import { useEffect } from 'react'
+          import Sawo from 'sawo'
+
+          const Login = () => {
+              useEffect(() => {
+                  var config = {
+                      // should be same as the id of the container created on 3rd step
+                      containerID: 'sawo-container',
+                      // can be one of 'email' or 'phone_number_sms'
+                      identifierType: 'phone_number_sms',
+                      // Add the API key copied from 5th step
+                      apiKey: 'API_KEY',
+                      // Add a callback here to handle the payload sent by sdk
+                      onSuccess: payload => {
+                          console.log(payload);
+                      },
+                  }
+                  let sawo = new Sawo(config)
+                  sawo.showForm()
+              }, [])
+
+              return (
+
+                  <div>
+                      <div id="sawo-container" 
+                      style={{
+                      height: "300px", 
+                      width: "400px",
+                      }}
+                      ></div>
+                  </div>
+              )
+          }
+
+          export default Login;
      
-     
+Here, we have to replace the API_KEY with the API key in our dashboard that we got earlier. 
+
+5. Once we successfully set up the SAWO SDK with the instructions above, we will get the SAWO login form in our application as shown below:
+
+.. image:: ../images/Untitled%20(10).png
+
+Congratulations! You have successfully integrated SAWO with your React Application.
+
+Conclusion
+----------
+
+Oops! You got stuck! Don’t worry! We know this can be hard for a first-timer. Tell us where you got stuck in the #ask-for-help channel in our `official discord server <https://discord.com/invite/TpnCfMUE5P>`__, and our engineers will help you out.
+
+*We hope you have enjoyed this article. Enjoy with SAWO and we will see you next time.*
