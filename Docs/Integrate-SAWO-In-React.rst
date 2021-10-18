@@ -102,7 +102,7 @@ Here, we have to replace the API_KEY with the API key in our dashboard that we g
 
 Congratulations! You have successfully integrated SAWO with your React Application.
 
-You can also check out the `React Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/React-Sample-App>`__ and ` Sample App <https://sawo-react-sample-app.netlify.app/ >`__
+You can also check out the `React Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/React-Sample-App>`__ and `Sample App <https://sawo-react-sample-app.netlify.app>`__.
 
 Conclusion
 ----------
