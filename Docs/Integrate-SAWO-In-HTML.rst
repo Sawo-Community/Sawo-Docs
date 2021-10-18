@@ -65,6 +65,8 @@ We need to follow a few steps to get the SAWO SDK integrated in our HTML page.
           var sawo = new Sawo(config);
           sawo.showForm();
           </script>
+          
+Here, put the API Key in *apiKey: ""* that we got from the dashbaord.          
 
 5. Once we successfully set up the SAWO SDK, a login form will be rendered in the provided container, as displayed in the picture below:
 
