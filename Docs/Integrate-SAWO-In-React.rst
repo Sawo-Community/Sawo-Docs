@@ -46,3 +46,11 @@ We need to follow a few steps to get SAWO integrated into our application.
      - If you are adding your domain, do not add 'https://', ''http://', 'www' or even trailing backslash. Example: We should keep https://dev.sawolabs.com/ as dev.sawolabs.com
 .. image:: ../images/SAWO%206.png
 
+3. While integrating SAWO SDK in our application, firstly, we have to install the Sawo package from the code given below:
+
+.. code-block:: none
+
+     npm i sawo
+     
+     
+     
