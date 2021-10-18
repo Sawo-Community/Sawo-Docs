@@ -37,3 +37,47 @@ We need to follow a few steps to get the SAWO SDK integrated in our HTML page.
 
      - If you are adding your domain, do not add 'https://', ''http://', 'www' or even trailing backslash. Example: We should keep https://dev.sawolabs.com/ as dev.sawolabs.com
 .. image:: ../images/SAWO%206.png
+
+3. For the third step, we have to return to the HTML source code (where you have written or will write your HTML code). There, in the body tag (*<body>script</body>*), you have to put the following code. You can put the ID according to your will but remember it, as we will need it in the next step. This ID will be our "Container ID".
+
+.. code-block:: none
+    
+    <div id="sawo-container" style="height: 300px; width: 300px;"></div>
+    
+4. After this, we have to add the following snippet at the bottom of the source code inside the body tag for the fourth step. The following code will invoke the SAWO API in your project.  
+
+.. code-block:: none
+
+          <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+          <script>
+          var config = {
+          // should be same as the id of the container created on 3rd step
+          containerID: "sawo-container",
+          // can be one of 'email' or 'phone_number_sms'
+          identifierType: "phone_number_sms",
+          // Add the API key copied from 1st step
+          apiKey: "",
+          // Add a callback here to handle the payload sent by sdk
+          onSuccess: (payload) => {
+          console.log(payload)
+          },
+          };
+          var sawo = new Sawo(config);
+          sawo.showForm();
+          </script>
+
+5. Once we successfully set up the SAWO SDK, a login form will be rendered in the provided container, as displayed in the picture below:
+
+.. image:: ../images/Untitled%20(10).png
+
+Congratulations !! You have made it. SAWO Login is now ready to be used on your HTML page.
+
+You can also check out SAWO's HTML Sample Code `here <https://github.com/sawolabs/html-example>`__.
+
+Conclusion
+==========
+
+Oops! You got stuck! Don’t worry! We know this can be hard for a first-timer. Tell us where you got stuck in the #ask-for-help channel in our `official discord server <https://discord.com/invite/TpnCfMUE5P>`__, and our engineers will help you out.
+
+*We hope you have enjoyed this article. Play with SAWO and we will see you next time.*
+    
