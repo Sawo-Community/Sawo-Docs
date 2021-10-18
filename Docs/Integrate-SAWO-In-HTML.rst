@@ -55,7 +55,7 @@ We need to follow a few steps to get the SAWO SDK integrated in our HTML page.
           containerID: "sawo-container",
           // can be one of 'email' or 'phone_number_sms'
           identifierType: "phone_number_sms",
-          // Add the API key copied from 1st step
+          // Add the API key copied from dashboard
           apiKey: "",
           // Add a callback here to handle the payload sent by sdk
           onSuccess: (payload) => {
