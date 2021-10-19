@@ -93,4 +93,70 @@ Here, add the API Key that we copied from the dashboard.
 
       this.Sawo = new Sawo(sawoConfig)
 
-- Lastly, we have to call the showForm method as the showForm method is responsible for rendering the form in the given container.
+- Lastly, we have to call the showForm method as the showForm method is responsible for rendering the form in the given container. The following code does that.
+
+.. code-block:: none
+    
+     this.Sawo.showForm()
+
+5. By integrating all of the above steps, the following code block will be added in the sawo.component.ts file in the app folder within the src folder:
+
+.. code-block:: none
+
+     import { Component } from '@angular/core';
+     import Sawo from "sawo"
+
+
+     @Component({
+       selector: 'app-root',
+       templateUrl: './app.component.html',
+       styleUrls: ['./app.component.css']
+     })
+
+     export class AppComponent {
+
+       title = 'angular-sawo-chander';
+       Sawo: any;
+       isLoggedIn:any= false;
+       userPayload:any = {};
+
+       constructor() {}
+
+       ngOnInit(){
+         const sawoConfig = {
+           // should be same as the id of the container
+           containerID: "sawo-container",
+           // can be one of 'email' or 'phone_number_sms'
+           identifierType: "phone_number_sms",
+           // Add the API key
+           apiKey: "",
+           // Add a callback here to handle the payload sent by sdk
+           onSuccess: (payload: any) => {
+             this.userPayload = payload;
+             this.isLoggedIn = true;
+           }
+         };
+         // creating instance
+         this.Sawo = new Sawo(sawoConfig)
+       }
+
+       ngAfterViewInit() {
+         this.Sawo.showForm()
+       }
+
+     }
+
+6. Once we set up the SAWO SDK successfully, a login form will be rendered in the provided container as displayed in the picture below:
+
+.. image:: ../images/Untitled%20(10).png
+
+Congratulations! You have successfully integrated SAWO with your Angular Application.
+
+You can also check out the `Angular Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/Angular-Sample-App>`__ and `Sample App <https://sawo-angular-sample-app.netlify.app>`__.
+
+Conclusion
+----------
+
+Hope you have enjoyed this short tutorial. We know this can be hard for a first-timer. If you got stuck, tell us where you got stuck in the #ask-for-help channel in our `official discord server <https://discord.com/invite/TpnCfMUE5P>`__, and our engineers will help you out.
+
+*Enjoy with SAWO and we will see you next time.*
