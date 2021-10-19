@@ -100,7 +100,7 @@ We must replace the "yourdomain" with our domain name or simply put "localhost".
 
 Congratulations! You have successfully integrated SAWO with your Laravel Application.
 
-You can also check out the `Laravel Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/Laravel-example-app>`__
+You can also check out the `Laravel Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/Laravel-example-app>`__.
 
 Conclusion
 ----------
