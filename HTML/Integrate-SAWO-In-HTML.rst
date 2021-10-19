@@ -81,5 +81,5 @@ Conclusion
 
 Hope you have enjoyed this short tutorial. We know this can be hard for a first-timer. If you got stuck, tell us where you got stuck in the #ask-for-help channel in our `official discord server <https://discord.com/invite/TpnCfMUE5P>`__, and our engineers will help you out.
 
-*We hope you have enjoyed this article. Play with SAWO and we will see you next time.*
+*Play with SAWO and we will see you next time.*
     
