@@ -64,7 +64,7 @@ We have to go to the folder where we have created the React application and run 
           const Login = () => {
               useEffect(() => {
                   var config = {
-                      // should be same as the id of the container created on 3rd step
+                      // should be same as the id of the container 
                       containerID: 'sawo-container',
                       // can be one of 'email' or 'phone_number_sms'
                       identifierType: 'phone_number_sms',
