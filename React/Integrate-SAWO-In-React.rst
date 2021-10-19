@@ -30,7 +30,7 @@ We need to follow a few steps to get SAWO integrated into our application.
 
 .. image:: ../images/SAWO%203.png
 
-1.3 Now, you can see in the project section the display of details about your project. Open notepad and copy the “API key” because you will need it afterwards.
+1.3 Now, we can see in the project section the display of details about our project. Open notepad and copy the “API key” because we will need it afterwards.
 
 .. image:: ../images/SAWO%204.png
 
