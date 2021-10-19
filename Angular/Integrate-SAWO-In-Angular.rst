@@ -54,4 +54,43 @@ There are a few steps for us to follow for proper integration of SAWO into an An
 
 We have to go to the folder where we have created the Angular application and run the code in the terminal, which will install the SAWO package.
 
-     
+4. We have to initialise SAWO and render the form according to the following steps:
+
+- As part of this step, we have to create a container for the SAWO Component. We will do it in our project’s source file. The following code determines that:
+
+.. code-block:: none
+    
+    <div id="sawo-container" style="height: 300px; width: 300px;"></div>
+
+This shows the container ID and the style associated with it.
+
+    - Every added custom field should be accompanied by an 50px increase in the component height.
+
+- We have to check the configurations. The code given below should help in the same.
+
+.. code-block:: none
+    
+  ngOnInit(){
+    const sawoConfig = {
+      // should be same as the id of the container
+      containerID: "sawo-container",
+      // can be one of 'email' or 'phone_number_sms'
+      identifierType: "phone_number_sms",
+      // Add the API key
+      apiKey: "",
+      // Add a callback here to handle the payload sent by sdk
+      onSuccess: (payload: any) => {
+        this.userPayload = payload;
+        this.isLoggedIn = true;
+      }
+    };
+    
+Here, add the API Key that we copied from the dashboard.
+
+- After this, we have to create a SAWO instance from the code given below.
+
+.. code-block:: none
+
+      this.Sawo = new Sawo(sawoConfig)
+
+- Lastly, we have to call the showForm method as the showForm method is responsible for rendering the form in the given container.
