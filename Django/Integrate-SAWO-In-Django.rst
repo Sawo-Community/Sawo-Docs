@@ -1,10 +1,10 @@
-Integrate SAWO in Flask
-=======================
+Integrate SAWO in Django
+========================
 
-Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+Django is a high-level Python Web framework that aids in rapid development and clean, realistic design. It reduces the hassle so we can focus on coding the app rather than reinventing the whole wheel.
 
-Let's get our Flask App running with SAWO
-=========================================
+Let's get our Django App running with SAWO
+==========================================
 
 To get our app running, we need to have a few things installed.
 
@@ -18,9 +18,9 @@ Steps
 
 We need to follow a few steps to get SAWO integrated into our application.
 
-1. As the first step to getting our Flask App to run with SAWO login, we need an essential component, which is the “SAWO API key”. You are probably wondering where we can get these, right? For that, we have to create a project in the SAWO Dashboard, where we can go directly by clicking `here <https://dev.sawolabs.com/>`__.
+1. As the first step to getting our Django App to run with SAWO login, we need an essential component, which is the “SAWO API key”. You are probably wondering where we can get these, right? For that, we have to create a project in the SAWO Dashboard, where we can go directly by clicking `here <https://dev.sawolabs.com/>`__.
 
-1.1 Click the “create new project” button. Choose the platform on which we will create our project, where we will be able to see the code beforehand. In this case, it will be “web” as we are creating it on Flask. Click continue.
+1.1 Click the “create new project” button. Choose the platform on which we will create our project, where we will be able to see the code beforehand. In this case, it will be “web” as we are creating it on Django. Click continue.
 
 .. image:: ../images/SAWO%201.png
 
@@ -71,9 +71,36 @@ We have to go to the folder where we have created the Flask application and run 
 - Next, we have to send this data required by _sawo.html. The variable names used in _sawo.html template are sawo.auth_key, sawo.identifier and sawo.to Therefore, to send this data, we have to create a JSON.
     
     - The "to" route should be a post route that can receive posted data. If you don’t know how data is passed to templates in Django or Flask. We will suggest looking into it first. 
-    
-Method using Admin and Database to save Config for SAWO
--------------------------------------------------------
+
+We have two methods to do this.
+
+First Method sending Static Data
+--------------------------------
+
+- The following code sends the static data to your application:
+
+.. code-block:: none
+
+          context = {
+                  "sawo":{
+                          "auth_key": "<api_key>",
+                          "identifier": "email | phone_number_sms"
+                          "to": <route> #the route where you will receive
+                          the payload sent by sdk                 
+                  }
+          }
+
+          #example
+          context = {
+                  "sawo":{
+                          "auth_key": "785ha-hdjsdsd-799-ss345",
+                          "identifier": "email | phone_number_sms"
+                          "to": login               
+                  }
+          }
+
+Second Method using Admin and Database to save Config for SAWO
+--------------------------------------------------------------
 
 - We have to create the fields for SAWO api_key and identifier to set it from admin dashboard. For this, we have to copy the following code in the models of our app.
 
@@ -107,24 +134,6 @@ Method using Admin and Database to save Config for SAWO
              "sawo" = getContext(config,"login") 
 
          }
-         
-- Lastly, we have to add the following code in the src folder to get the SAWO API running in our application.
-
-.. code-block:: none
-
-          "sawo":{
-                 "auth_key": "<api_key>",
-                 "identifier": "email | phone_number_sms"
-                 "to": <route> #the route where you will recieve the payload sent by sdk                 
-           }
-
-           #example
-
-           "sawo":{
-                  "auth_key": "785ha-hdjsdsd-799-ss345",
-                  "identifier": "email | phone_number_sms"
-                  "to": login               
-          }
           
 6. Once we successfully set up the SAWO SDK with the instructions above, we will get the SAWO login form in our application as shown below:
 
@@ -132,7 +141,7 @@ Method using Admin and Database to save Config for SAWO
 
 Congratulations!! The SAWO API is now ready to be used in your Flask application 🤘.
 
-You can also check out the `Flask Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/Flask-Sample-App>`__ and `Sample App <https://sawo-flask-sample-app.herokuapp.com/>`__.
+You can also check out the `Django Sample Code <https://github.com/Sawo-Community/Sawo-Sample-Apps/tree/main/Django-Sample-App>`__ and `Sample App <https://sawo-django-sample-app.herokuapp.com/>`__.
 
 Conclusion
 ----------
