@@ -66,16 +66,4 @@ For other operating systems
 ```python
 pip install pipenv 
 ```
-3. In the terminal window, navigate into the cloned repository:
-```sh
-cd docs
-```
-4. Install the required packages by running the following command:
-```python
-pipenv install
-```
-5. Build the documentation set using `make html`. This generates files in `/build` directory.
-6. Navigate to the `/build` directory to preview your changes by running the following command:
-```sh
-cd /build
-```
+
