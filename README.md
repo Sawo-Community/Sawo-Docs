@@ -54,7 +54,7 @@ If you've downloaded the repository and are editing SAWO documentation on your l
 
 1. Open a terminal window, then clone a forked copy of the documentation repository by running the following command::
 ```sh
-git clone https://github.com/mattermost/docs.git
+https://github.com/Sawo-Community/Sawo-Docs.git
 ```
 2. Install [pipenv](https://docs.pipenv.org/) by using one of the following commands based on your operating system:
 
