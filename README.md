@@ -22,7 +22,7 @@ You can edit or create SAWO documentation directly in GitHub or by downloading t
 
 ### Editing
 
-The quickest way to begin is editing directly on GitHub on your fork of the Mattermost docs repo. Click the **Edit** icon on the top right corner of the page you want to edit in the SAWO documentation.
+The quickest way to begin is editing directly on GitHub on your fork of the SAWO docs repo. Click the **Edit** icon on the top right corner of the page you want to edit in the SAWO documentation.
 
 If this is the first time you're contributing, follow these steps: 
 1. Select **Fork** in the top-right corner of the GitHub page to fork the repository.
