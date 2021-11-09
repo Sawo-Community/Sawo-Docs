@@ -20,7 +20,7 @@ The following image will show the naming of a markdown file.
 
 After naming the file, scroll down and click on "Commit New File", which will create the new file. Add contents in the file by clicking on the "Pencil Icon" in the right hand corner. This will allow you to open the editing interface and will enable you to make further commits.
 
-Create the tech documentation guide by following the SAWO template, which you will find by clicking [here](https://github.com/Sawo-Community/Sawo-Docs/blob/main/Template-for-Guides/README.md)
+Create the tech documentation guide by following the SAWO template, which you will find by clicking [here](https://github.com/Sawo-Community/Sawo-Docs/blob/main/Template-for-Guides/README.md).
 
 # Opening a Pull Request
 
@@ -33,3 +33,7 @@ After this, click on the "Create Pull Request" button in the right hand corner, 
 ![Creating a Pull Request](https://github.com/Sawo-Community/Sawo-Docs/blob/main/images/SAWO%20Fork5.png)
 
 Once you have given a proper title and description of the PR, again click on "Create Pull Request". This will officially create a Pull Request for the Sawo-Docs repository. You can now check your PR at the Pull Request section of the main repository.
+
+# Naming and Describing a PR
+
+Give an appropiate title of the Pull Request which will resonate with your technical documentation. After naming, give a brief and proper description of the technical documentation which will help our team of reviewers and maintainers to understand and review the document in a quick manner.
