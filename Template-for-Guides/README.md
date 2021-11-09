@@ -44,6 +44,8 @@ Repeat this process, until you are done with the steps. Index all of the steps a
 
 The text inside the third bracket after the "exclamation" tells the description of the image. Inside the first bracket, lies the path of the image. A path is an URL where the image is originally located. You will get to see the syntax in the *editing interface*.
 
+If you feel the need to sub index the contents under any step, feel free to do that by using bullets or numbers.
+
 ## {Last step serial no.} Conclusion
 
 In the description of this step, add an upbeat congratulatory message which will commence the end of the guide. You can add, "Congratulations! You have completed the tutorial." If you have recorded a demo video of the walkthrough, add that through a single line in this step. A popular line will be, "Here's a [working demo](https://www.youtube.com) of the tutorial we just went over."
