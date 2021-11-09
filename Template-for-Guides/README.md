@@ -55,3 +55,5 @@ In this section, mention some of the popular tech stacks that are already availa
 --------------------------------
 
 This marks the end of the template. Use this template to write a tech documentation guide for any integration with SAWO.
+
+Submit your technical documentation according to the official submission guide of SAWO, which you can access by clicking [here](https://github.com/Sawo-Community/Sawo-Docs/blob/main/Template-for-Guides/Submission-Guide.md).
