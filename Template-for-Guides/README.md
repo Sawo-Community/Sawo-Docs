@@ -38,6 +38,18 @@ After this, very briefly describe the step and add any relevant code blocks. Giv
 
 An additional "hash symbol" identifies the secondary headings inside the primary heading.
 
+## 1. {Step 1 Title}
+
+Step 1 description will be here.
+
+## 2. {Step 2 Title}
+
+Step 2 description will be here. An indexed description will be as follows:
+* Listed sentence 1
+* Listed sentence 2
+
+and the steps will go on.
+
 Repeat this process, until you are done with the steps. Index all of the steps as shown above. Add pictures along with code blocks if necessary. To add a picture, use the following syntax as shown below:
 
 ![Sawo Dashboard](https://github.com/Sawo-Community/Sawo-Docs/blob/main/images/SAWO%201.png)
