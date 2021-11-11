@@ -10,4 +10,12 @@ If you are new to technical writing, this program will be a great platform to le
 
 Whether you are new to GitHub or you are a pro, you will be able to take full advantage of the program. You can find the basics of markdown in the [template for submission](https://github.com/Sawo-Community/Sawo-Docs/blob/main/Template-for-Guides/README.md) and the basics of submission at [submission guide](https://github.com/Sawo-Community/Sawo-Docs/blob/main/Template-for-Guides/Submission-Guide.md). Still, if you are getting stuck or facing problems, don't hesitate to contact the SAWO team.
 
-## 
+## What is the timeline of the program?
+
+The program will commence on the weekends. Participants will have 7 days to research and write the technical guides along with making a submission. 
+
+## Will I have to be in a team to participate?
+
+Participation in this program is solely individual. No teams are allowed.
+
+
