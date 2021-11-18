@@ -1,120 +1,130 @@
-# Integrate SAWO in a Gatsby Site
+# Integrate SAWO in your Gatsby Site
 
 Gatsby is a React-based open-source framework for creating websites and apps. It combines the control and scalability of dynamically rendered sites with the speed of static-site generation that helps developers build blazing fast websites and apps.
 
-# Let's get our Gatsby site running with SAWO
-
-To get our site running, we need to have a few things installed.
-
-## Requirements
+# Requirements
 
 Node [Version 14.5+ ], Node Package Manager (NPM) [Version 6.x+]
+You can find detailed steps to install the requirements with the help of [Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/part-0/).
 
-### Creating a Gatsby site
+# Get Started
+
+Once the requirements are satisfied, you can move head with further steps.
+
+## 0. Create a Gatsby site
 
 Refer to the official [documentation](https://www.gatsbyjs.com/docs/quick-start/) of Gatsby to create your first Gatsby site.
 
-### Generate SAWO API key
+## 1. Generate SAWO API key
 
-1. Navigate to SAWO Dashboard if you have an account or create a new account [here](https://dev.sawolabs.com/) by logging in.
+- Navigate to SAWO Dashboard if you have an account or create a new account [here](https://dev.sawolabs.com/) by logging in.
 
-2. In your SAWO dashboard, click on the create project button at the bottom left to create a new project.
-   ![Project Button](img/create-button.png)
+- In your SAWO dashboard, click on the create project button at the bottom left to create a new project.
+  ![Project Button](img/create-button.png)
 
-3. Choose web and then code since we'll be using react framework Gatsby and writing the custom code ourselves.
+- Choose web and then code since you'll be using react framework Gatsby and writing the custom code yourselves.
 
 ![Select Web](img/select-web.png)
 
 Click continue. You'll be see a similar prompt like the one below.
 ![Create Project](img/create-project.png)
 
-4. Name your project with relevant name. I've named it 'gatsbysite'. For development in a local machine, the hostname should be set to 'localhost'.
+- Name your project with relevant name. I've named it 'gatsbysite'.
+  2.1 For development in a local machine, the hostname should be set to 'localhost'.
 
-On clicking create button, you can successfully see the API key and SAWO keys downloaded.
+  > If using "localhost" as hostname is not working for you, try "127.0.0.1"
 
-### Integrating Gatsby site with SAWO
+  2.2 For production, the hostname should be set to your domain.
 
-1. Before we can use SAWO API, we'll have to install the SAWO Package. Enter the following command in your terminal. (Make sure you're inside your Gatsby site folder)
+  > If you are adding your domain do not add 'https://', ''http://', 'www' or even trailing backslash. Example: https://dev.sawolabs.com/ should be kept as dev.sawolabs.com
 
-   ```shell
-   npm i sawo
-   ```
+On clicking create button, you can successfully see the API key created and SAWO keys csv file downloaded.
 
-2. Open your preferred page for login and enter the import line below to import sawo class.
+## 2. Integrate SAWO in Gatsby
 
-   ```js
-   import Sawo from 'sawo'
-   ```
+- Before you can use SAWO API, you'll have to install the SAWO Package. Enter the following command in your terminal. (Make sure you're inside your Gatsby site folder)
 
-3. You can create a page using below code.
+  ```shell
+  npm i sawo
+  ```
 
-   ```
-   import React, { useEffect } from 'react'
-   import Sawo from 'sawo'
-   import { navigate } from 'gatsby'
-   ```
+- Open your preferred page for login and enter the import line below to import sawo class.
 
-   ```
-   // styles
-   const pageStyles = {
-   color: '#232129',
-   padding: 96,
-   fontFamily: '-apple-system, Roboto, sans-serif, serif',
-   }
-   const headingStyles = {
-   marginTop: 0,
-   marginBottom: 64,
-   maxWidth: 320,
-   }
-   ```
+  ```js
+  import Sawo from 'sawo'
+  ```
 
-   ```
-   // markup
-   const IndexPage = () => {
-   useEffect(() => {
-   var config = {
-   // should be same as the id of the container created on 3rd step
-   containerID: 'CONTAINER_ID_HERE',
-   // can be one of 'email' or 'phone_number_sms'
-   identifierType: 'email',
-   // Add the API key copied from 5th step
-   apiKey: 'API_KEY_HERE',
-   // Add a callback here to handle the payload sent by sdk
-   onSuccess: (payload) => {
-   // you can use this payload for your purpose
-   navigate('/TO_PAGE_HERE')
-   },
-   }
-   let sawo = new Sawo(config)
-   sawo.showForm()
-   }, [])
-   return (
+- You can create a login page using below code.
 
-   <main style={pageStyles}>
-   <title>Login Page</title>
-   <h1 style={headingStyles}>Login Page</h1>
-   <div
-   id="sawo-container"
-   style={{ height: '300px', width: '400px' }} ></div>
-   </main>
-   )
-   }
+  ```js
+  import React, { useEffect } from 'react'
+  import Sawo from 'sawo'
+  import { navigate } from 'gatsby'
+  ```
 
-   export default IndexPage
+  ```js
+  // styles
+  const pageStyles = {
+    color: '#232129',
+    padding: 96,
+    fontFamily: '-apple-system, Roboto, sans-serif, serif',
+  }
+  const headingStyles = {
+    marginTop: 0,
+    marginBottom: 64,
+    maxWidth: 320,
+  }
+  ```
 
-   ```
+  ```js
+  // markup
+  const IndexPage = () => {
+    useEffect(() => {
+      var config = {
+        // should be same as the id of the container created on 3rd step
+        containerID: 'CONTAINER_ID_HERE',
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: 'email',
+        // Add the API key copied from 5th step
+        apiKey: 'API_KEY_HERE',
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+          // you can use this payload for your purpose
+          navigate('/TO_PAGE_HERE')
+        },
+      }
+      let sawo = new Sawo(config)
+      sawo.showForm()
+    }, [])
+    return (
+      <main style={pageStyles}>
+        <title>Login Page</title>
+        <h1 style={headingStyles}>Login Page</h1>
+        <div
+          id="sawo-container"
+          style={{ height: '300px', width: '400px' }}
+        ></div>
+      </main>
+    )
+  }
 
-4. Replace the 'CONTAINER_ID_HERE' with the id of your div. In the above code it is 'sawo-container'.
+  export default IndexPage
+  ```
 
-5. Replace 'API_KEY_HERE' with the api key from sawo dashboard. Make sure to enquote it.
+- Replace the 'CONTAINER_ID_HERE' with the id of your div. In the above code it is 'sawo-container'.
 
-6. Finally, on successful payload, do your preferred action. In this case, I'm redirecting to new page.
+- Replace 'API_KEY_HERE' with the api key from your sawo dashboard. Make sure to enquote it.
 
-Congratulations! You have successfully integrated SAWO with your Gatsby Site.
+- Finally, on successful payload, do your preferred action. In this case, it is redirecting to new page.
 
-You can also check out the [Gatsby sample code on Github](https://github.com/irsayvid/gatsby-sawo).
+This is how our login page looks like
 
-## Conclusion
+![Login Page](img/login-page.png)
 
-Voila! You've integrated SAWO succesfully in your Gatsby site.
-Enjoy with SAWO and we will see you next time.
+## 3. Conclusion
+
+"Congratulations! You have made it till the end and have learned how to integrate SAWO in your Gatsby site. It's time to give yourself a pat on the back and take a break! In case you're facing difficulties, Here's a [working demo](https://youtu.be/Vvl3WwVr5tg) of the tutorial you just went over. Find the source code for the same [here](https://github.com/irsayvid/gatsby-sawo)."
+
+# What's Next?
+
+If you love to experiment, feel free to look at the [SAWO documentation](https://docs.sawolabs.com/sawo/) for integration in React, Django and other frameworks. Keep building :)
