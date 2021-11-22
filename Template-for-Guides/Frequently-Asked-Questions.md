@@ -28,4 +28,4 @@ It is not compulsory to submit a video tutorial with the technical guide. But, t
 
 ## More questions?
 
-If you have more questions, feel free to ask us in [discord](https://discord.gg/TpnCfMUE5P) or email us at community.sawolabs@gmail.com .
+If you have more questions, feel free to ask us in [discord](https://discord.gg/TpnCfMUE5P) or email us at community.sawolabs@gmail.com.
