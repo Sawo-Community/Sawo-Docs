@@ -43,7 +43,7 @@ Create your first Gatsby site taking reference from the official [documentation]
  <p align="center">
  <img src="https://github.com/shreya-gb/Sawo-Docs/blob/main/Gatsby/Code.png" width="690" height="350">
  </p>
-   
+
  ## WordPress : If you want to integrate for no-code platform.
 <p align="center">
 <img src="https://github.com/shreya-gb/Sawo-Docs/blob/main/Gatsby/WordPress.png" width="700" height="350">
@@ -56,9 +56,9 @@ Create your first Gatsby site taking reference from the official [documentation]
 <p align="center">
 <img src="https://user-images.githubusercontent.com/61507305/143178630-dd37512d-5b8f-423d-89f5-fc97f1b210ba.png" width="730" height="330">
 </p>
- 
+
   ## Host Name
-  
+
 | | |
 |-|-|
 | `Not Deployed` | Your default **LOCAL HOSTNAME** itself will be your hostname: "**127.0.0.1**" 😎|
@@ -118,7 +118,6 @@ Create your first Gatsby site taking reference from the official [documentation]
      marginBottom: 45,
      maxWidth: 400,
    }
-
    // markup
    const IndexPage = () => {
      useEffect(() => {
@@ -138,7 +137,6 @@ Create your first Gatsby site taking reference from the official [documentation]
        let sawo = new Sawo(config)
        sawo.showForm()
      }, [])
-
      return (
        <main style={pageStyles}>
          <title> Login Page </title>
