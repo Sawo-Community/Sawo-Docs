@@ -29,14 +29,14 @@
 # Get Started
 Let's start by:
 ## 0. Creating a NextJS Webpage
-After all your installations; You will have a something like this on the left of your code-area *[VSCode Explorer]*.
+After all your installations; You will have something like this on the left of your code-area *[VSCode Explorer]*.
 
 ![1](https://user-images.githubusercontent.com/61507305/143485640-3eed7920-7873-4bc7-8abf-8fd7dd3259a7.PNG)
 
 
 ## 1. Generate a SAWO API key
    - Create / Register for an account with SAWO [here!](https://dev.sawolabs.com/) for passwordless authentication.
-   - If you already have one, then navigate to **[SAWO Dashboard](https://dev.sawolabs.com/dash/dashboard)** (if, already have one)
+   - If you already have one, then navigate to **[SAWO Dashboard](https://dev.sawolabs.com/dash/dashboard)**.
    - On your SAWO dashboard, click on **Create New Project** button at the bottom left to create your new project.
 
 <p align="center">
@@ -76,7 +76,7 @@ After all your installations; You will have a something like this on the left of
 - By default, you API Keys created using SAWO are downloaded as a `csv` file. Securely, save them.
 
 
-<h1 align="center"> Wohoo!!🎊 You successfully set you an API Key for yourself. </h1>
+<h1 align="center"> Wohoo!!🎊 You successfully generated an API Key for yourself! </h1>
 
 ---
 
@@ -84,9 +84,12 @@ After all your installations; You will have a something like this on the left of
 
 - Assuming, you have created a new "Project" during your instalation process, that same "Project name must be remembered"
 
+
+
 - **Follow this path**: <br />
 
 { Your Project name } ▶ Pages ▶ index.js [If, you are working using JavaScript]
+
 
 
 - **Install SAWO-React SDK**(Package): Within your code terminal, before you integrate SAWO API in your project.
@@ -114,33 +117,39 @@ After all your installations; You will have a something like this on the left of
   ```
 
 
-- **Style the JavaScript Sheet**: You can create a login page using below code. Style in the same "Login - JavaScript file". Copy contents from the ```index.js``` boilerplate.
+- **Style the JavaScript Sheet**:
+     1. Style in the same "Login - JavaScript file".
+     2. Copy contents from the ```index.js``` boilerplate.
+     3. Feel free to change the *style properties*, according to your convinience.
+     4. You can create a login page using below code.
 
 
-#### Copy and paste this code and just style the Login Page according to your convinience:
+#### Copy and paste this code:
   ```js
-  import React, { useEffect } from "react";
-  import SawoLogin from "sawo-react";
+    import React, { useEffect } from "react";
+    import SawoLogin from "sawo-react";
 
-  const [PAGE_NAME] = () => {
-    function sawoLoginCallback(payload) {
-      console.log(payload);
-    }
+     const [PAGE_NAME] = () => {
+          function sawoLoginCallback(payload) {
+     console.log(payload);
+           }
 
-    const sawoConfig = {
-      onSuccess: sawoLoginCallback, //required,
-      identifierType: "phone_number_sms", //required, must be one of: 'email', 'phone_number_sms',
-      apiKey: "API_KEY_HERE", // required, get it from sawo dev.sawolabs.com,
-      containerHeight: "300px", // the login container height, default is 300px
-    };
-    return (
+      const sawoConfig = {
+         onSuccess: sawoLoginCallback, //required,
+         identifierType: "phone_number_sms", //required, must be one of: 'email', 'phone_number_sms',
+         apiKey: "API_KEY_HERE", // required, get it from sawo dev.sawolabs.com,
+         containerHeight: "300px", // the login container height, default is 300px
+      };
+
+      return (
       <div>
-        <SawoLogin config={sawoConfig} />
+         <SawoLogin config={sawoConfig} />
       </div>
-    );
-  };
-  export default [PAGE_NAME];
-  ```
+      );
+      };
+      
+      export default [PAGE_NAME];
+       ```
 
 
 | Placeholders | Solutions |
