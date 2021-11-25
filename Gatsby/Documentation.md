@@ -59,7 +59,7 @@ Create your first Gatsby site taking reference from the official [documentation]
 
   ## Host Name
 
-| | |
+| Property | Solution |
 |-|-|
 | `Not Deployed` | Your default **LOCAL HOSTNAME** itself will be your hostname: "**127.0.0.1**" 😎|
 | `Deployed/Hosted` | Enter the **DOMAIN NAME** without the preceeding or trailing special symbols like the ```/``` or ```www```, ```http://```, ```https://```, ```ftp://```, and so on.|
@@ -153,7 +153,7 @@ Create your first Gatsby site taking reference from the official [documentation]
 </p>
 
 
-| | |
+| Placeholders | Solutions |
 |-|-|
 | `CONTAINER_ID_HERE` | Enter the "Project ID" mentioned on your SAWO Dashboard. Refer the image for reference (Yellow)|
 | `API_KEY_HERE` | Enter the "API Key" mentioned on your SAWO Dashboard. Refer the image for reference (Green)|
