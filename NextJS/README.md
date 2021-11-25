@@ -1,4 +1,4 @@
-# Integrate SAWO in a Gatsby Site
+# Integrate SAWO in a NextJS Webpage
 
 ## What is NextJS?
 * NextJS is an **Open-Source Development Framework** for building Server-side & Client-side rendered React applications, so that users can view and interact with..
