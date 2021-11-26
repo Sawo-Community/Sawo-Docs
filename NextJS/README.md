@@ -149,7 +149,7 @@ After all your installations; You will have something like this on the left of y
       };
       
       export default [PAGE_NAME];
-       ```
+   ```
 
 
 | Placeholders | Solutions |
