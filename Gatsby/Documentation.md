@@ -25,7 +25,7 @@ Create your first Gatsby site taking reference from the official [documentation]
 
 ## 1. Generate a SAWO API key
    - Create / Register for an account with SAWO [here!](https://dev.sawolabs.com/) for passwordless authentication.
-   - If you already have one, then navigate to **[SAWO Dashboard](https://dev.sawolabs.com/dash/dashboard)** (if, already have one)
+   - If you already have one, then navigate to **[SAWO Dashboard](https://dev.sawolabs.com/dash/dashboard)**.
    - On your SAWO dashboard, click on **Create New Project** button at the bottom left to create your new project.
 
 <p align="center">
