@@ -82,7 +82,7 @@ After all your installations; You will have something like this on the left of y
 
 ## 2. Integrate SAWO within NextJS
 
-- Assuming, you have created a new "Project" during your instalation process, that same "Project name must be remembered"
+- Assuming, you have created a new <b>Project</b> during your instalation process, that same <b>Project name must be remembered</b>.
 
 
 
