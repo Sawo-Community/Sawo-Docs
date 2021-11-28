@@ -1,7 +1,7 @@
 # Integrate SAWO in a NextJS Webpage
 
 ## What is NextJS?
-* NextJS is an **Open-Source Development Framework** for building Server-side & Client-side rendered React applications, so that users can view and interact with..
+* NextJS is an **Open-Source Development Framework** for building Server-side and Client-side rendered React applications, so that users can view and interact with..
 * It performs 2 kinds of Rendering:
      1. Pre-rendered (For Static Generation (SSG)), and
      2. Server-Side rendering (SSR) are supported on a per-page basis
