@@ -2,7 +2,7 @@
 
 ## What is Gatsby?
 * Gatsby is an ***open source framework*** that helps you to develop static webpages and apps with React.
-* Gatsby sites are incredibly fast to build, and are equally quick in performance.
+* Gatsby sites are incredibly fast to build and are equally quick in performance.
 
 # Software Requirements
   * [Node.js](https://nodejs.org/en/) (v14.15 or newer) 
