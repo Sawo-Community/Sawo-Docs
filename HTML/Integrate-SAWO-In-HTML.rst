@@ -40,13 +40,13 @@ We need to follow a few steps to get the SAWO SDK integrated in our HTML page.
 
 3. For the third step, we have to return to the HTML source code (where you have written or will write your HTML code). There, in the body tag (*<body>script</body>*), you have to put the following code. You can put the ID according to your will but remember it, as we will need it in the next step. This ID will be our "Container ID".
 
-.. code-block:: none
+.. code-block:: html
     
     <div id="sawo-container" style="height: 300px; width: 300px;"></div>
     
 4. After this, we have to add the following snippet at the bottom of the source code inside the body tag for the fourth step. The following code will invoke the SAWO API in your project.  
 
-.. code-block:: none
+.. code-block:: js
 
           <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
           <script>
