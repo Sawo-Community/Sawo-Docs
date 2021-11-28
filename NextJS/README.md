@@ -1,12 +1,18 @@
-# Integrate SAWO in a NextJS Webpage
+# Integrate SAWO in a Next.js Webpage
 
-## What is NextJS?
-* NextJS is an **Open-Source Development Framework** for building Server-side and Client-side rendered React applications, so that users can view and interact with..
-* It performs 2 kinds of Rendering:
-     1. Pre-rendered (For Static Generation (SSG)), and
-     2. Server-Side rendering (SSR) are supported on a per-page basis
+## What is Next.js?
+* Next.js is an **Open-Source Development Framework** for building Server-side and Client-side rendered React applications, so that users can view and interact with.
+
+* It performs 2 kinds of Pre-Rendering, that support on a per-page basis:
+
+     1. Static-Site Generation (<b>SSG</b>),
+
+     2. Server-Side rendering (<b>SSR</b>)
+
 * It also performs **API Routing** that helps to access data present within the databases.
-* NextJS acts as a complete full-stack framework, which is built on top of React.
+
+* Next.js acts as a complete full-stack framework, which is built on top of React.
+
 
 # Software Requirements
   * [Node.js](https://nodejs.org/en/) (v14.15 or newer)
@@ -16,7 +22,7 @@
 *Check the detailed Guide [here](https://nextjs.org/learn/basics/create-nextjs-app/setup)*
 
 
-## Why use NextJS?
+## Why use Next.js?
 * It is a simple **Static Site Generators**
 * It renders JavaScript in the browser itself
 * The client-side application has full interactivity with the content, despite it effectively being just a copy-paste content.
@@ -28,7 +34,7 @@
 
 # Get Started
 Let's start by:
-## 0. Creating a NextJS Webpage
+## 0. Creating a Next.js Webpage
 After all your installations; You will have something like this on the left of your code-area *[VSCode Explorer]*.
 
 ![1](https://user-images.githubusercontent.com/61507305/143485640-3eed7920-7873-4bc7-8abf-8fd7dd3259a7.PNG)
@@ -50,7 +56,7 @@ After all your installations; You will have something like this on the left of y
 
    - Or, Choose your setup mode based on your preference.
 
- ## Code : For creating your custom webpage using *NextJS*.
+ ## Code : For creating your custom webpage using *Next.js*.
  <p align="center">
  <img src="https://github.com/shreya-gb/Sawo-Docs/blob/main/Gatsby/Code.png" width="690" height="350">
  </p>
@@ -80,7 +86,7 @@ After all your installations; You will have something like this on the left of y
 
 ---
 
-## 2. Integrate SAWO within NextJS
+## 2. Integrate SAWO within Next.js
 
 - Assuming, you have created a new <b>Project</b> during your instalation process, that same <b>Project name must be remembered</b>.
 
@@ -155,7 +161,7 @@ After all your installations; You will have something like this on the left of y
 | Placeholders | Solutions |
 |-|-|
 | `API_KEY_HERE` | Enter the "API Key" mentioned on your SAWO Dashboard|
-| `"PAGE_NAME"` | Enter the JavaScript file name in Camelcase (Abc)|
+| `PAGE_NAME` | Enter the JavaScript file name in Camelcase (Abc)|
 
 
 - **Update your index.js**:
@@ -179,7 +185,7 @@ After all your installations; You will have something like this on the left of y
 ## 3. Final View
 
 
-## Login with Phone
+## Login using Phone Number
 ![Login](https://user-images.githubusercontent.com/61507305/143489308-cd19cc62-5446-46ba-baab-4c1ca441b397.png)
 
 ## Redirected Page
@@ -188,21 +194,27 @@ After all your installations; You will have something like this on the left of y
 
 ---
 
-# Who uses NextJS?
+# Who uses Next.js?
 
-#### Websites of Netflix, GitHub, Uber, Ticketmaster, Starbucks many other renowned companies use NextJS.
+#### Websites of Netflix, GitHub, Uber, Ticketmaster, Starbucks many other renowned companies use Next.js!
 
 ---
 
 ## 4. Conclusion
 
-"Congratulations to you!! 🥇 On successfully integrating SAWO API on your "NextJS Webpage". Good to see you didn't give up halfway! 🎊
+<p align="center">
+<img src="https://user-images.githubusercontent.com/61507305/143779684-a8db23ef-e35a-48e0-b53b-0e312543d190.jpg">
+</p>
+     
+<h1 align="center"> Congratulations on successful integration of SAWO API on your Next.js Webpage🥇 </h1>
 
+<br />
 
-The SAWO API is now ready to be used in your NextJS Webpage 🤘
+Good to see, that you didn't give up halfway! 🎊
 
+The SAWO API is now ready to be used in your Next.js Webpage 🤘
 
-The Documentation of the NextJS integration will be up soon, on the SAWO Documentation.
+The Documentation for Next.js integration will be up soon, on the SAWO Documentation.
 
 
 ## Not interested in reading the docs?
