@@ -225,7 +225,8 @@ Check this [Tutorial](https://youtu.be/) here, that I have demonstrated from scr
 
 ## Still stuck somewhere? Want to suggest a Feature?
 
-Ask our community members at [SAWO](https://discord.com/invite/TpnCfMUE5P)👨🏻‍💻👩🏻‍💻 Join our Discord community 🎯
+Ask our community members at [SAWO](https://discord.com/invite/TpnCfMUE5P)💻 Join our Discord community 🎯
+- Have a look at this [Source Code](https://github.com/shreya-gb/SAWO-Integrations/tree/master) for your reference.
 
 ---
 
