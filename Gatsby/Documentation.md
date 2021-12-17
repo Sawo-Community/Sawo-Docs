@@ -196,7 +196,7 @@ Check this [Tutorial](https://youtu.be/Vvl3WwVr5tg) here, that our fellow commun
 
 ## Still stuck somewhere? Want to suggest a Feature?
 
-Ask our community members at [SAWO](https://discord.com/invite/TpnCfMUE5P)👨🏻‍💻👩🏻‍💻 Join our Discord community 🎯
+Ask our community members at [SAWO](https://discord.com/invite/TpnCfMUE5P)💻 Join our Discord community 🎯
 
 ---
 
