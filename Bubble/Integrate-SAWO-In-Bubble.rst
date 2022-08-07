@@ -43,7 +43,7 @@ We need to follow a few steps to get SAWO integrated into our application.
 
 2.2 For production, the hostname should be set to your domain.
 
-     - If you are adding your domain, do not add 'https://', ''http://', 'www' or even trailing backslash. Example: We should keep https://dev.sawolabs.com/ as dev.sawolabs.com
+     - If you are adding your domain, do not add 'https://', 'http://', 'www' or even trailing backslash. Example: We should keep https://dev.sawolabs.com/ as dev.sawolabs.com
 .. image:: ../images/SAWO%206.png
 
 3. To start with SAWO API Integration on Bubble, install the SAWO plugin from the marketplace.
